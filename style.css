@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heading {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading {
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+}
+
+.sub-heading {
+    margin-top: 15px;
+    font-size: 21px;
+    color: dimgrey;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardContent {
+    border: 1px solid black;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button-submit {
+    padding: 10px 20px;
+}
+
+.change-heading {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.table-container {
+    margin-top: 30px;
+}

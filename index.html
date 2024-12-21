@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Change Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid heading">
+      <h1 class="main-heading">Pay Role Management</h1>
+      <p class="sub-heading">Enter the bill amount and cash given by the customer and know the minimum number of notes to return.</p>
+    <div class="cardContent">
+      <form class="row g-3" id="cashForm">
+        <div class="col-12">
+          <label for="input-amount" class="form-label">Enter The Bill Amount</label>
+          <input type="number" class="form-control" id="billAmount" name="billAmount" placeholder="enter the bill amount" required>
+        </div>
+        <div class="col-12">
+          <label for="input-cash" class="form-label">Cash Given</label>
+          <input type="number" class="form-control" id="cashGiven" name="cashGiven" placeholder="enter the cash you given" required>
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" onclick="changeCalculator()" class="btn btn-primary button-submit">Check</button>
+        </div>
+      </form>
+    </div>
+    <div class="table-container">
+      <h1 class="change-heading">Return Change</h1>
+      <div class="table-responsive">
+        <div class="table" style="border: 1px solid black;"  id="tableContent">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
